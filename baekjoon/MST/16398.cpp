@@ -4,6 +4,7 @@ using namespace std;
 const int vMAX = 1000;
 vector <int> p(vMAX+5, -1);
 tuple<int, int, int> edge[vMAX*vMAX/2+5];
+
 int find(int x){
   if(p[x] <0) return x;
   return p[x] = find(p[x]);
