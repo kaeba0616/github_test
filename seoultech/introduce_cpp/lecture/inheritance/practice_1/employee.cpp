@@ -9,18 +9,19 @@ using std::string;
 using std::cout;
 
 namespace SavitchEmployees{
-  Employee::Employee() : name ("No name yet"), ssn("No number yet"), netPay(0){
+  Employee::Employee() : name ("No name yet"), Ssn("No number yet"), netPay(0){
     //deliberately empty
   }
   Employee::Employee(const string& theName, const string& theNumber)
-    : name(theName), ssn(theNumber), netPay(0){
+    : name(theName), Ssn(theNumber), netPay(0){
       //deliberately empty
     }
   string Employee::getName()const{
     return name;
   }
+
   string Employee::getSsn()const{
-    return ssm;
+    return Ssn;
   }
   
   double Employee::getNetPay() const{
@@ -32,7 +33,7 @@ namespace SavitchEmployees{
   }
   
   void Employee::setSsn(const string& newSsn){
-    ssn = newSsn;
+    Ssn = newSsn;
   }
 
   void Employee::setNetPay(double newNetPay){

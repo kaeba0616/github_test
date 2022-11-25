@@ -16,7 +16,9 @@ namespace SavitchEmployees{
   }
 
   HourlyEmployee::HourlyEmployee(const string& theName, const string& theNumber, double theWageRate, double theHours)
-    : Employee(theName, theNumber), wageRate(theWageRate), hours(theHours){
+   : Employee(theName, theNumber){
+      wageRate =theWageRate;
+      hours =theHours;
       //deliberately empty
   }
 
@@ -37,13 +39,14 @@ namespace SavitchEmployees{
   }
 
   void HourlyEmployee::printCheck(){
-    setNetPay(hours * wageRate);
+    setNetPay(hours*wageRate);
     cout <<"\n_____________________________________________\n";
-    cout<<"Pay to the order of " <<getNetPay()<<"\n"
+    cout<<"Pay to the order of " <<getName()<<"\n";
+    cout<<"The sum of " <<getNetPay() << "Dollars\n";
     cout<<"______________________________________________\n";
     cout<<"Check Stub: NOT NEGOTIABLE\n";
-    cout<<"Employee Number: " <<getSsn() "\n";
-    cout<<"Hourly Employee. \nHours worked: "<<houts
+    cout<<"Employee Number: " <<getSsn() <<"\n";
+    cout<<"Hourly Employee. \nHours worked: "<<hours
         <<" RateL "<<wageRate <<" Pay: "<<getNetPay()<<"\n";
     cout<<"______________________________________________\n";
   }

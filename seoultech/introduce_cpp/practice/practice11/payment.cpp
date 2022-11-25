@@ -45,26 +45,15 @@ class CashPayment : public Payment{
     CashPayment();
     CashPayment(float amt);
     void paymentDetails();
-    void setCashPayment(float amt);
-    float getCashPayment();
   private:
-    float Cash_amount;
 };
 
-CashPayment::CashPayment() : Cash_amount(0){}
+CashPayment::CashPayment() : Payment(0){}
 
-CashPayment::CashPayment(float amt) : Cash_amount(amt){}
-
-void CashPayment::setCashPayment(float amt){
-  Cash_amount =amt;
-}
-
-float CashPayment::getCashPayment(){
-  return Cash_amount;
-}
+CashPayment::CashPayment(float amt) : Payment(amt){}
 
 void CashPayment::paymentDetails(){
-  cout <<"The cash payment amount is "<<Cash_amount<<"\n";
+  cout <<"The cash payment amount is "<<getPayment()<<"\n";
 }
 
 class CreditPayment : public Payment{
@@ -80,17 +69,19 @@ class CreditPayment : public Payment{
     void paymentDetails();    
 
   private:
-    float credit_amount;
     string name;
     string expirationDate;
     string creditCardNumber;
 };
 
 CreditPayment::CreditPayment() : 
-  credit_amount(0), name(""), expirationDate(""), creditCardNumber(""){}
+  Payment(0), name(""), expirationDate(""), creditCardNumber(""){}
 
-CreditPayment::CreditPayment(float amt, string newN, string newED, string newCCN) :
-  credit_amount(amt), name(newN), expirationDate(newED), creditCardNumber(newCCN){}
+CreditPayment::CreditPayment(float amt, string newN, string newED, string newCCN) : Payment(amt){
+  this->name =newN;
+  this->expirationDate = newED;
+  this->creditCardNumber = newCCN;
+}
 
 string CreditPayment::getName(){
   return name;
@@ -117,7 +108,7 @@ void CreditPayment::setCreditCardNumber(string newCCN){
 }
 
 void CreditPayment::paymentDetails(){
-  cout<<"The credit card payment amount is "<<credit_amount<<"\n";
+  cout<<"The credit card payment amount is "<<getPayment()<<"\n";
   cout<<"The name on the card is: "<<name<<"\n";
   cout<<"The expiration date is: "<<expirationDate<<"\n";
   cout<<"The credit card number is: "<<creditCardNumber<<"\n";  
@@ -144,4 +135,3 @@ int main(){
 
   return 0;
 }
-
