@@ -7,6 +7,7 @@ using SavitchEmployees::HourlyEmployee;
 using SavitchEmployees::SalariedEmployee;
 
 int main(){
+  
   HourlyEmployee joe;
   joe.setName("Mighty Joe");
   joe.setSsn("123-45-6789");

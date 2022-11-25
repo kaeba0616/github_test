@@ -16,9 +16,7 @@ namespace SavitchEmployees{
   }
 
   HourlyEmployee::HourlyEmployee(const string& theName, const string& theNumber, double theWageRate, double theHours)
-   : Employee(theName, theNumber){
-      wageRate =theWageRate;
-      hours =theHours;
+   : Employee(theName, theNumber), wageRate(theWageRate), hours(theHours){
       //deliberately empty
   }
 
