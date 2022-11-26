@@ -1,5 +1,4 @@
 #include<iostream>
-#include"pfarrayd.h"
 #include "pfarraydbak.h"
 using std::cin;
 using std::cout;

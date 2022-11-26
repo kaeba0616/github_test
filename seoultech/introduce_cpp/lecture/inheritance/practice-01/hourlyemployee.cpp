@@ -25,7 +25,15 @@ namespace SavitchEmployees{
   }
 
   void HourlyEmployee::printCheck(){
-    setNetPay(hours* wageRate);
-    cout<<"Yes";
+    setNetPay(hours*wageRate);
+    cout <<"\n_____________________________________________\n";
+    cout<<"Pay to the order of " <<getName()<<"\n";
+    cout<<"The sum of " <<getNetPay() << "Dollars\n";
+    cout<<"______________________________________________\n";
+    cout<<"Check Stub: NOT NEGOTIABLE\n";
+    cout<<"Employee Number: " <<getSsn() <<"\n";
+    cout<<"Hourly Employee. \nHours worked: "<<hours
+        <<" RateL "<<wageRate <<" Pay: "<<getNetPay()<<"\n";
+    cout<<"______________________________________________\n";
   }
 }
