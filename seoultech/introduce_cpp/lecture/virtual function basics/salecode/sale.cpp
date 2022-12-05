@@ -6,7 +6,7 @@ namespace SavitchSale{
   Sale::Sale() : price(0){}
 
   Sale::Sale(double thePrice){
-    if(thePrice >=0) price = thrPrice;
+    if(thePrice >=0) price = thePrice;
     else{
       cout << "Error: Cannot have a negative price!\n";
       exit(1);

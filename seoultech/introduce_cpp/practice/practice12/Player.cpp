@@ -6,6 +6,16 @@ class Player {
   virtual int getGuess() = 0;
 };
 
+class HumanPlayer : public Player {
+ public:
+  int getGuess();
+};
+
+class ComputerPlayer : public Player {
+ public:
+  int getGuess();
+};
+
 bool checkForWin(int guess, int answer) {
   if (answer == guess) {
     cout << "You're right! You win!"
@@ -41,21 +51,11 @@ void play(Player &player1, Player &player2) {
   }
 }
 
-class HumanPlayer : public Player {
- public:
-  int getGuess();
-};
-
 int HumanPlayer::getGuess() {
   int guess;
   cin >> guess;
   return guess;
 }
-
-class ComputerPlayer : public Player {
- public:
-  int getGuess();
-};
 
 int ComputerPlayer::getGuess() {
   int guess;

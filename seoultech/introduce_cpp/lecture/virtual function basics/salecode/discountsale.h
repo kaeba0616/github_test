@@ -8,10 +8,12 @@ namespace SavitchSale{
         DiscountSale();
         DiscountSale(double thePrice, double theDiscount);
         double getDiscount() const;
-        void setDiscount() const;
+        void setDiscount(double newDiscount);
         double bill() const;
 
       private:
         double discount;
   };
 }
+
+#endif

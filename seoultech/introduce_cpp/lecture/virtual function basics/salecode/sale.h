@@ -1,7 +1,7 @@
 #ifndef SALE_H
 #define SALE_H
 
-namespace SavitonSale{
+namespace SavitchSale{
   class Sale{
     public:
       Sale();

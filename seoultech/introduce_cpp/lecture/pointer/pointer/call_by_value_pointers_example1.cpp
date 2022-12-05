@@ -15,7 +15,7 @@ int main(){
   return 0;
 }
 
-void sneaky(Intpointer temp){
+void sneaky(IntPointer temp){
   *temp = 99;
   cout<< "Inside function call *temp == " <<*temp<<"\n";
 }

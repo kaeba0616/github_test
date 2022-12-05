@@ -21,8 +21,5 @@ int main(){
   else{
     cout << "Discounted item is not cheaper.\n";
   }
-
   return 0;
 }
-
-19:00
