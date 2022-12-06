@@ -23,3 +23,8 @@ int main(){
 //Consturctor : Derived
 //Destructor : Derived
 //Destructor : Base
+
+//FTFF T(F) F(T) ?(F) T F(T) F
+
+//1 / 1,3,5 / 4 / 2 / 2 / 5 (1)
+

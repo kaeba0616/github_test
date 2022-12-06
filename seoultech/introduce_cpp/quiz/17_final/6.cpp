@@ -58,8 +58,6 @@ int main(){
   
   for(int i =0; i<5; i++){
     A[i]->what();
-    char* arr = A[i]->what();
-    cout << *arr;
     A[i]->play(int2note(i));
   }
   return 0;
