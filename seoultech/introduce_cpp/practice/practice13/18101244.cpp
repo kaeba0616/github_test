@@ -16,8 +16,5 @@ int main() {
   double double1 = 5.5, double2 = 3.1;
   cout << "Absolute value of (" << double1 << "-" << double2 << ") is "
        << abs_val(double1, double2) << "\n";
-  char char1 = 'A', char2 = 'C';
-  cout << "Absolute value of (" << char1 << "-" << char2 << ") is "
-      << abs_val(char1, char2) << "\n";
   return 0;
 }

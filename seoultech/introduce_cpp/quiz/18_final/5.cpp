@@ -1,0 +1,32 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+class Base{
+  public:
+    virtual string print() const{
+      return "This is Base class";
+    }
+};
+
+class Derived : public Base{
+  public:
+    virtual string print() const{
+      return "This is Derived class";
+    }
+};
+
+void describe(Base p){
+  cout << p.print() <<"\n";
+}
+
+int main(){
+  Base b;
+  Derived d;
+  describe(b);
+  describe(d);
+  return 0;
+}
+
+//This is Base class
+//This is Base class
