@@ -16,6 +16,13 @@ class Derived : public Base{
 int main(){
   Base *Var = new Derived();
   delete Var;
+
+  cout <<"\n";
+ 
+  Derived*d= new Derived();
+  Base *b = d;
+  delete b;
+
   return 0;
 }
 

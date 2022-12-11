@@ -1,8 +1,12 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
-int func(int i) { return i * 5; }
+int main(){
+  int *entry;
+  entry = new int[10];
 
-int junk(int i);
-int main() {
-  cout << "junk(5) = " << junk(5) << "\n";
+  cout << "Enter 10 integers: \n";
+  for(int i = 0; i < 10; i++) cin >> entry[i];
+  for(int i = 0; i < 10; i++) cout << entry[i] <<" ";
+  cout <<"\n";
+  return 0;
 }
