@@ -30,10 +30,8 @@ void foo(const Enemy& inKlep){
 
 int main(){
   Scott kleper;
-  Enemy blah = kleper;
+  Enemy blah= kleper;
   foo(kleper);
   foo(3);
-  Enemy a;
-  a = 1;
   cout << "Done!" <<"\n";
 }

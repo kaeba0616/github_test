@@ -12,7 +12,7 @@ class Adder{
     friend bool operator==(const Adder& x,const Adder& y);
 };
 
-bool Adder::operator==(const Adder& x, const Adder& y){
+bool operator==(const Adder& x, const Adder& y){
   return (x.sum == y.sum);
 }
 

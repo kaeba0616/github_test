@@ -22,10 +22,10 @@ void D::m2() {cout << ", World";}
 int main() {
   C* c = new D();
   char x = 'F';
+  D d;
   c->m1();
   c->m2();
   c->m3(x);
-
   cout << x <<"\n";
   return 0;
 }
