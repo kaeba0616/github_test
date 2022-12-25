@@ -17,6 +17,12 @@ class Student{
     string *classList;
 };
 
+Student::Student(){
+  numClasses =0;
+  classList = NULL;
+  name = "";
+}
+
 Student::~Student(){
   if(classList != NULL){
     delete [] classList;

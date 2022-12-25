@@ -15,7 +15,6 @@ bool compare(auto &a, auto &b){
     return a.Y < b.Y
   return a.X/a.Y > b.X/b.Y;
 }
-
 int main(){
   ios::sync_with_stdio(0);
   cin.tie(0);
@@ -43,3 +42,4 @@ int main(){
   cout<<K[n][C];
 }
   
+3 5 < 3 0 + 60

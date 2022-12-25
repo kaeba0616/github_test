@@ -5,7 +5,7 @@ int arr[1003];
 int n;
 
 void shellsort(int n) { 
-  for (int gap = n / 2; gap > 0; gap = 2) {  //gap에 대한 조건 설정
+  for (int gap = n / 2; gap > 0; gap /= 2) {  //gap에 대한 조건 설정
     //index가 gap에서부터 즉, 첫번째 값이 정렬됬다고 가정한 후 그 다음 값을 선택
     for (int i = gap; i < n; i++) {  
       //선택한 값을 임시 변수에 저장한 후
